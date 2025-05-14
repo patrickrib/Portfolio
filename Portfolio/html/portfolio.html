@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/portfolio.css" />
+    <script src="../js/dados.menu.js"></script>
+    <script src="../js/dados.portfolio.js"></script>
+    <script src="../js/idioma.js"></script>
+    <script src="../js/idioma.global.js"></script>
+    <script src="../js/portfolio.js"></script>
+    <script src="../js/menu.js"></script>
+    <title>Portfólio - Patrick Ribeiro</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="menu">
+            <div class="titulo-menu">Portfólio</div>
+            <ul>
+                <li><a id="menu-inicio" href="index.html">Início</a></li>
+                <li><a id="menu-sobre" href="sobre.html">Sobre mim</a></li>
+                <li><a id="menu-portfolio" href="portfolio.html">Portfólio</a></li>
+                <li><a id="menu-contato" href="contato.html">Contato</a></li>
+            </ul>
+            <div class="idioma-container">
+                <select id="seletor-idioma">
+                    <option value="pt-br">PT</option>
+                    <option value="en-us">EN</option>
+                </select>
+            </div>
+        </nav>
+
+        <main class="principal">
+            <section class="portfolio">
+                <!-- Os cards são criados dinamicamente nesta área -->
+            </section>
+        </main>
+    </div>
+    <div id="modal" class="modal-overlay">
+        <div class="modal">
+            <button class="modal-fechar">×</button>
+            <h3 class="modal-titulo"></h3>
+            <div class="modal-corpo"></div>
+            <div class="modal-tecnologias"></div>
+        </div>
+    </div>
+</body>
+</html>

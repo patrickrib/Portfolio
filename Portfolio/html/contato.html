@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/contato.css" />
+    <script src="../js/dados.menu.js"></script>
+    <script src="../js/dados.contato.js"></script>
+    <script src="../js/idioma.js"></script>
+    <script src="../js/idioma.global.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/contato.js"></script>
+    <title>Contato - Patrick Ribeiro</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="menu">
+            <div class="titulo-menu">Contato</div>
+            <ul>
+                <li><a id="menu-inicio" href="index.html">Início</a></li>
+                <li><a id="menu-sobre" href="sobre.html">Sobre mim</a></li>
+                <li><a id="menu-portfolio" href="portfolio.html">Portfólio</a></li>
+                <li><a id="menu-contato" href="contato.html">Contato</a></li>
+            </ul>
+            <div class="idioma-container">
+                <select id="seletor-idioma">
+                    <option value="pt-br">PT</option>
+                    <option value="en-us">EN</option>
+                </select>
+            </div>
+        </nav>
+
+        <main class="principal">
+            <h1 id="contato-titulo">Fale comigo</h1>
+            <form class="form-contato">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+
+                <button type="submit" id="botao-enviar">Enviar</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

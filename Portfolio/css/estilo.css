@@ -1,0 +1,134 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scrollbar-gutter: stable;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.6rem;
+    background-color: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 1fr minmax(300px, 1000px) 1fr;
+    max-width: 100%;
+}
+
+.topo {
+    grid-column: 1 / -1;
+    background-color: #0e0e0f;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2.4rem;
+}
+
+.titulo-menu {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    grid-column: 1 / -1;
+    background-color: #333;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+    .menu ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 0;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        transition: background-color 0.3s;
+    }
+
+        .menu a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+.principal {
+    grid-column: 2;
+    padding: 4rem 2rem;
+}
+
+.idioma-container {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+}
+
+    .idioma-container select {
+        background-color: #333;
+        color: white;
+        border: 1px solid #555;
+        border-radius: 5px;
+        padding: 0.3rem 0.8rem;
+        font-size: 1.4rem;
+        outline: none;
+        cursor: pointer;
+    }
+
+        .idioma-container select option {
+            background-color: #fff;
+            color: #000;
+        }
+
+#seletor-idioma {
+    visibility: hidden;
+}
+
+    #seletor-idioma.pronto {
+        visibility: visible;
+    }
+
+@media (max-width: 768px) {
+    .principal {
+        grid-column: 1 / -1;
+        padding: 2rem 1rem;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .idioma-container {
+        margin: 1rem 0 0;
+        justify-content: center;
+        width: 100%;
+    }
+}
