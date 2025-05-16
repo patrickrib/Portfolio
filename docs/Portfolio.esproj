@@ -1,5 +1,6 @@
 ﻿<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.1184077">
   <ItemGroup>
     <Folder Include=".vscode\" />
+    <Folder Include="html\" />
   </ItemGroup>
 </Project>
