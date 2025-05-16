@@ -32,7 +32,24 @@
                 titulo: "Localização",
                 texto: "Curitiba - PR"
             }
-        }
+        },
+        formacao: [
+            {
+                instituicao: "PUC-PR",
+                curso: "Análise e Desenvolvimento de Sistemas"
+            },
+            {
+                instituicao: "Uninter",
+                curso: "Engenharia de Software (Cursando)"
+            }
+        ],
+        idiomas: [
+            { idioma: "Português", nivel: "Nativo", classe: "pt-br" },
+            { idioma: "Inglês", nivel: "Fluente", classe: "en-us" },
+            { idioma: "Espanhol", nivel: "Fluente", classe: "es" },
+            { idioma: "Italiano", nivel: "Intermediário", classe: "it" },
+            { idioma: "Francês", nivel: "Leitura / Compreensão", classe: "fr" }
+        ]
     },
     "en-us": {
         tituloPagina: "About Me",
@@ -67,6 +84,23 @@
                 titulo: "Location",
                 texto: "Curitiba - PR"
             }
-        }
+        },
+        formacao: [
+            {
+                instituicao: "PUC-PR",
+                curso: "Systems Analysis and Development"
+            },
+            {
+                instituicao: "Uninter",
+                curso: "Software Engineering (In progress)"
+            }
+        ],
+        idiomas: [
+            { idioma: "Portuguese", nivel: "Native", classe: "pt-br" },
+            { idioma: "English", nivel: "Fluent", classe: "en-us" },
+            { idioma: "Spanish", nivel: "Fluent", classe: "es" },
+            { idioma: "Italian", nivel: "Intermediate", classe: "it" },
+            { idioma: "French", nivel: "Reading / Comprehension", classe: "fr" }
+        ]
     }
 };
