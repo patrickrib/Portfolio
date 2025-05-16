@@ -77,7 +77,7 @@
     margin-bottom: 3rem;
 }
 
-.contato-container {
+.bloco-lateral {
     display: flex;
     align-items: flex-start;
     gap: 2rem;
@@ -159,8 +159,57 @@
         transform: translate(-50%, -50%);
     }
 
-.contato-info p {
+.bloco-info p {
     margin: 0;
     font-size: 1.4rem;
     color: #666;
 }
+
+.idioma-titulo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.idioma-barra {
+    width: 160px;
+}
+
+.barra {
+    background-color: #eee;
+    height: 10px;
+    border-radius: 4px;
+    margin-top: 6px;
+    width: 100%;
+}
+
+.nivel {
+    height: 100%;
+    border-radius: 4px;
+}
+
+    .nivel.pt-br {
+        width: 100%;
+        background-color: #009c3b;
+    }
+
+    .nivel.en-us {
+        width: 90%;
+        background-color: #3c3b6e;
+    }
+
+    .nivel.es {
+        width: 85%;
+        background-color: #c60b1e;
+    }
+
+    .nivel.it {
+        width: 70%;
+        background-color: #008c45;
+    }
+
+    .nivel.fr {
+        width: 60%;
+        background-color: #0055a4;
+    }
+
